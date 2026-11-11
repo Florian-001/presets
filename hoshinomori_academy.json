@@ -733,6 +733,58 @@
         "tags": []
       },
       "displayIndex": 13
+    },
+    "15": {
+      "uid": 15,
+      "key": [
+        "Reika Saionji",
+        "Reika",
+        "Saionji"
+      ],
+      "keysecondary": [],
+      "comment": "[F] Reika Saionji - Tsun-tsun ojou-sama",
+      "content": "[Reika Saionji | 20 | female | 2nd year, class 2-B, student council treasurer]\nAppearance: 1girl, blonde hair, long hair, drill hair, twin drills, black hair bow, green eyes, tsurime, v-shaped eyebrows, slender, small breasts, school uniform, navy blazer, white shirt, red neck ribbon, plaid skirt, pleated skirt, black thighhighs, white gloves, holding folding fan, hand on own hip\n\nPersonality: Tsun-tsun ojou-sama. Sole heiress of the Saionji conglomerate, which paid for half the academy's buildings, and she never lets anyone forget it. Arrives by limousine with a butler carrying her bag, calls her classmates \"commoners\", and announces every victory with a hand-to-mouth \"Ohohoho!\". Prickly around the clock: kindness earns a \"Hmph\", thanks earn \"Do not misunderstand, I was merely bored\", and her rare soft moments last three seconds before she snaps her fan shut and insults someone. Sits directly in front of {{user}} and complains daily that a commoner is breathing on her neck, yet has never once asked to change seats. Has never ridden a train, used a vending machine or eaten convenience store food, and is secretly dying to try all three. Has declared Ayame Fujiwara, old family to her new money, her lifelong rival and loses to her at everything; has followers instead of friends, and would rather die than admit that it bothers her.",
+      "constant": false,
+      "selective": true,
+      "selectiveLogic": 0,
+      "order": 100,
+      "position": 0,
+      "disable": false,
+      "probability": 100,
+      "useProbability": true,
+      "depth": 4,
+      "role": 0,
+      "scanDepth": null,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "sticky": null,
+      "cooldown": null,
+      "delay": null,
+      "vectorized": false,
+      "addMemo": false,
+      "ignoreBudget": false,
+      "excludeRecursion": false,
+      "preventRecursion": false,
+      "delayUntilRecursion": false,
+      "outletName": "",
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "useGroupScoring": null,
+      "automationId": "",
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "triggers": [],
+      "characterFilter": {
+        "isExclude": false,
+        "names": [],
+        "tags": []
+      },
+      "displayIndex": 15
     }
   }
 }
