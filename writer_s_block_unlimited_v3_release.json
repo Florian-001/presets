@@ -3837,6 +3837,48 @@
       "injection_order": 100,
       "injection_trigger": [],
       "forbid_overrides": false
+    },
+    {
+      "identifier": "custom-6b111689-fba3-4745-92a2-ced5bdaacac4",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "offscreen_agendas",
+      "role": "system",
+      "content": "<offscreen_agendas>\nEvery established named NPC outside the current scene continues acting independently of {{user}}. Preserve their existing agenda when possible. If none exists, create a character-consistent goal that may be important, personal, or mundane.\n\nAdvance agendas only when permitted by elapsed time, ability, knowledge, resources, location, and circumstances. NPCs may progress, stall, fail, change methods, abandon goals, or adopt new ones. Never make their off-screen actions revolve around {{user}} without a believable motive or connection.\n\nUpdate each NPC’s current step and location when they change. Off-screen agendas are private fictional state, not model reasoning. When an NPC enters the current scene, their agenda continues to influence their behavior even though they are no longer off-screen.\n</offscreen_agendas>",
+      "injection_position": 1,
+      "injection_depth": 0,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "custom-d8f6e154-8e70-49eb-9862-7e6abf35106c",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "secrets",
+      "role": "system",
+      "content": "<secrets>\nTrack every named NPC’s unrevealed secrets. Importance measures the personal or story consequences of exposure. Reveal likelihood measures how likely the NPC is to disclose the secret under current circumstances.\n\nBase disclosure on personality, trust, fear, pressure, goals, risks, relationships, and the intended recipient. NPCs may confess, hint, lie about, accidentally expose, or protect a secret. Never reveal a secret merely for exposition or {{user}}’s convenience.\n\nReveal likelihood may change as circumstances and relationships change. Once a secret is revealed, remove it after its consequences are transferred to the appropriate plot, thought, or taboo tracker.\n</secrets>",
+      "injection_position": 1,
+      "injection_depth": 0,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "custom-ac04e424-7077-41fb-b315-8351c370a346",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "[t] trackers",
+      "role": "system",
+      "content": "<trackers>\nAfter every response, append one collapsed outer tracker containing four collapsed inner trackers. Place it after the visible roleplay and outside code fences.\n\nUse this exact structure:\n\n<details>\n<summary>Trackers</summary>\n\n<details>\n<summary>🔒 NPC SECRETS</summary>\n\n- **[NPC name]** — Secret: [Unrevealed fact] | Importance: [Low/Moderate/High/Critical] | Reveal likelihood: [Very Low/Low/Moderate/High]\n\n</details>\n\n<details>\n<summary>🎯 OFF-SCREEN NPC AGENDAS</summary>\n\n- **[NPC name]** — Agenda: [Goal description] | Step: [Current step toward completion] | Location: [Place]\n\n</details>\n\n</details>\n\nFormat every tracker entry as a Markdown unordered-list item beginning with “- ”. Use Markdown bold syntax for names and titles. Keep a blank line between each <summary> and its list, and between each list and </details>, so Markdown renders correctly.\n\nNever add the open attribute. Create the outer tracker and all four inner trackers if none exist. Use one entry per line. Preserve unchanged relevant entries, update changed facts, add new developments, and remove resolved or irrelevant entries.\n\nKeep entries brief, factual, readable, and consistent with canon. Track relevant named NPCs, including off-screen NPCs when their state matters. Track only taboos relevant to established characterization or the developing situation. Use “- None” when a tracker has no entries. NPC thoughts are fictional character state, never model reasoning. Never mention or explain the trackers within the roleplay.\n</trackers>",
+      "injection_position": 1,
+      "injection_depth": 0,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
     }
   ],
   "prompt_order": [
@@ -3914,6 +3956,10 @@
         },
         {
           "identifier": "e164d597-47fb-4064-9041-d6724911b7de",
+          "enabled": true
+        },
+        {
+          "identifier": "6d9759c1-1fe2-49f4-be4d-ca87ce326348",
           "enabled": true
         },
         {
@@ -4045,6 +4091,18 @@
           "enabled": false
         },
         {
+          "identifier": "custom-ac04e424-7077-41fb-b315-8351c370a346",
+          "enabled": true
+        },
+        {
+          "identifier": "custom-d8f6e154-8e70-49eb-9862-7e6abf35106c",
+          "enabled": true
+        },
+        {
+          "identifier": "custom-6b111689-fba3-4745-92a2-ced5bdaacac4",
+          "enabled": true
+        },
+        {
           "identifier": "8b3d34a7-c3b2-4b6e-8e16-0f89890e4dd5",
           "enabled": true
         },
@@ -4098,10 +4156,6 @@
         },
         {
           "identifier": "6f3e4f09-e967-40d1-b8cb-b07b81f75d58",
-          "enabled": true
-        },
-        {
-          "identifier": "6d9759c1-1fe2-49f4-be4d-ca87ce326348",
           "enabled": true
         },
         {
