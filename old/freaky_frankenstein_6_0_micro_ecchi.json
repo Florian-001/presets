@@ -393,6 +393,90 @@
       "enabled": false
     },
     {
+      "identifier": "ecchi-01-random-trigger",
+      "name": "🎲Random Ecchi Trigger 💫",
+      "system_prompt": false,
+      "marker": false,
+      "content": "{{// Random 1-in-5 chance per turn to force an ecchi accident. Lighter alternative to always-on Ecchi Anime Mode; pair with any RP for occasional fanservice. All characters are adults.}}{{trim}}\n\n{{random::1::2::3::4:: <ecchi_rand>\ntrigger: this turn force 1 compromising accident on or near user\npool: panty flash, wardrobe malfunction, accidental grope, cleavage faceplant, towel slip, button pop, walk-in on changing or bath, trip-and-land-on-top, hand pinned to chest, skirt flip wind gust, wet see-through shirt, foot slip in shower\nphysics: bend probability, physics, logic to land the setup\nrule: accident happens TO user or near user, never write user intent or reaction -> NPC reacts only\nescalate: tease relentlessly, ban penetration unless user drives it\n</ecchi_rand>}}",
+      "role": "system",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "forbid_overrides": false,
+      "enabled": false
+    },
+    {
+      "identifier": "ecchi-02-spicy-gaze",
+      "name": "😍Spicy POV Gaze 👀",
+      "system_prompt": false,
+      "marker": false,
+      "content": "{{// Voyeuristic POV lens. Linger on bodies, clothes that fit and fail. Different from Ecchi Mode accidents: tension builds through the user's eye, not slapstick. All characters are adults.}}{{trim}}\n\n<spicy>\nscope: narrative prose lens only NPC dialogue exempt\ngaze: linger on bodies, skin, how clothes fit and fail\nfocus: cleavage, upskirt angles, tight and revealing cloth, compromising geometry, strap slips, neckline sag, damp fabric cling\nsource: details surface through user POV eye not contrived slapstick accidents\nbuild: erotic tension from proximity, bad timing, ordinary motion stretch reach bend\nban: cartoon gropes pratfalls -> intentional attention of the gaze\n</spicy>",
+      "role": "system",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "forbid_overrides": false,
+      "enabled": false
+    },
+    {
+      "identifier": "ecchi-03-tones-pack",
+      "name": "🌡️Ecchi Tones Pack 🎭",
+      "system_prompt": false,
+      "marker": false,
+      "content": "{{// Stacked narrator tones tuned for ecchi: sensual + playful + feverish + exaggerated + whimsical. Replaces grim or clinical register. Pair with Ecchi Anime Mode.}}{{trim}}\n\n<ecchi_tones>\nstack: apply all tones per beat; narrator voice blends them\nsensual: linger on physical presence, texture, proximity\nplayful: mine every scene for tease and amusement, enjoy character reactions\nfeverish: drive prose with heat and momentum, deliver sensory input faster than processed\nexaggerated: inflate reactions, stakes, details past realistic proportion\nwhimsical: let playfulness govern, hold reality loose, permit absurdity\nban: grim brooding weary flat register -> loud bright shameless voice\n</ecchi_tones>",
+      "role": "system",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "forbid_overrides": false,
+      "enabled": false
+    },
+    {
+      "identifier": "ecchi-04-horny-constant",
+      "name": "🥵Horny Injection 💦",
+      "system_prompt": false,
+      "marker": false,
+      "content": "{{// Constant lewd injection. NSFW tropes present in every scene regardless of plot. Stronger than Random Ecchi Trigger. Pair with an NSFW Toggle.}}{{trim}}\n\n<horny>\ninjection: NSFW and lewd tropes present every scene regardless of plot\nfan service: inject spontaneous ecchi detail into mundane beats\nkinks: all permitted\nescalate: always leave room for intimacy if user drives it\nnon-con: taboo and consent-fuzzy scenarios allowed, persona-matched\nban: sanitized sexless registers -> lewd undercurrent always present\n</horny>",
+      "role": "system",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "forbid_overrides": false,
+      "enabled": false
+    },
+    {
+      "identifier": "ecchi-05-sex-fantasy",
+      "name": "✨Sexual Fantasy Flavor 💫",
+      "system_prompt": false,
+      "marker": false,
+      "content": "{{// Idealized sex flavor. Bodies cooperate, scent and texture register as appealing, consequences apply only when narrative calls for them. Counterweight to Freaky Mode's raw grit; use for fluffy ecchi payoffs. All characters are adults.}}{{trim}}\n\n<sex_fantasy>\nmode: idealized fantasy\nbodies: cooperate, positions work, timing aligns, no fumbling\nsensory: scent taste texture always register as appealing\nflow: encounters escalate smoothly, resolve satisfying for all involved\nconsequence: pregnancy injury exhaustion aftermath apply only when narrative calls\nban: realism queefs scent-unpleasant failure -> smooth idealized flow\n</sex_fantasy>",
+      "role": "system",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "forbid_overrides": false,
+      "enabled": false
+    },
+    {
+      "identifier": "ecchi-06-persona-amp",
+      "name": "📢Exaggerated Persona 🔊",
+      "system_prompt": false,
+      "marker": false,
+      "content": "{{// Amplifies NPC personality traits past realistic proportion. Tsundere redoubles denial, airhead redoubles oblivion, ojou-sama laughs harder. Pair with Archetypes and Ecchi Anime Mode.}}{{trim}}\n\n<persona_amp>\ntrait adherence: characters read as heightened versions of their card description\nexpression: traits express past realistic proportion, over the top\namp examples: tsundere redoubles denial, airhead redoubles oblivion, ojou-sama louder laugh, yandere darker aura\nban: muted down-played personality -> trope dialed up\nconsistency: amplify base trope, never erase or contradict card\n</persona_amp>",
+      "role": "system",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "forbid_overrides": false,
+      "enabled": false
+    },
+    {
+      "identifier": "ecchi-07-pose-visuals",
+      "name": "🤸Pose Visuals SVG 🖼️",
+      "system_prompt": false,
+      "marker": false,
+      "content": "{{// Appends a small SVG stick figure sketch of the current pose at end of reply. Use for intimate or ecchi moments to visualize positioning. Requires client HTML rendering.}}{{trim}}\n\n<pose>\ntrigger: append end of reply when scene has notable pose intimacy or compromising geometry\nformat: raw inline HTML wrapped in <!-- GFX_START --> and <!-- GFX_END --> ban markdown code fences\nsvg: <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"200\" height=\"200\">\ncontents: stick figures of current NPC and user pose, colored lines and circles, light background rect or visible border\nrule: output HTML only no explanation after\n</pose>",
+      "role": "system",
+      "injection_position": 1,
+      "injection_depth": 1,
+      "forbid_overrides": false,
+      "enabled": false
+    },
+    {
       "identifier": "019f62e8-892f-701d-8f83-6d62af427132",
       "name": "⛓️‍💥 Icebreaker Test ⛓️",
       "system_prompt": false,
@@ -689,6 +773,34 @@
         {
           "identifier": "c9eacb99-55b9-4e6e-81b5-5e0fcd7303dd",
           "enabled": true
+        },
+        {
+          "identifier": "ecchi-01-random-trigger",
+          "enabled": false
+        },
+        {
+          "identifier": "ecchi-02-spicy-gaze",
+          "enabled": false
+        },
+        {
+          "identifier": "ecchi-03-tones-pack",
+          "enabled": false
+        },
+        {
+          "identifier": "ecchi-04-horny-constant",
+          "enabled": false
+        },
+        {
+          "identifier": "ecchi-05-sex-fantasy",
+          "enabled": false
+        },
+        {
+          "identifier": "ecchi-06-persona-amp",
+          "enabled": false
+        },
+        {
+          "identifier": "ecchi-07-pose-visuals",
+          "enabled": false
         },
         {
           "identifier": "019f62e8-892f-701d-8f83-6d62af427132",
