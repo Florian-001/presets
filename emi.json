@@ -2243,6 +2243,10 @@
           "enabled": false
         },
         {
+          "identifier": "chatHistory",
+          "enabled": true
+        },
+        {
           "identifier": "776e12e7-bb91-4ee9-b364-866702cd4b66",
           "enabled": true
         },
@@ -2549,10 +2553,6 @@
         {
           "identifier": "e75432dd-d888-4af7-97b1-b4a99610d5d2",
           "enabled": false
-        },
-        {
-          "identifier": "chatHistory",
-          "enabled": true
         },
         {
           "identifier": "jailbreak",
