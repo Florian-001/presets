@@ -744,6 +744,146 @@
       "injection_order": 100,
       "injection_trigger": [],
       "forbid_overrides": false
+    },
+    {
+      "identifier": "d5584bb6-9138-45cc-b6a8-9ad2f46d3fb1",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "(README! Pacing ",
+      "role": "system",
+      "content": "{{// Pacing \n\nThe way how i handled pacing is a bit more complex to other presets. I tried to think of it \"mechanically\" if that makes sense. \n\nI split the pacing into two parts over 9 prompts.\n\nStory pacing, the writing and prose itself (response length, paragraph density, sentence structure, consequence persistence, plot momentum). Basically telling how fast a scene should progress by forcing paragraph and sentence limits instead of telling the AI to \"slow down/speed up\" the story. \n\nAnd character development pacing (character change resistance, dialogue frequency, dialogue depth, personality trait adherence). Basically how fast the characters can change overall and opportunities for dialogue.\n\nYou'll see the listed prompts as you scroll down the prompt list but do keep in mind the pacing you want.\n\nThe idea is give users a lot of control over the pacing of their chat. You could have a story where the plot moves fast but the characters change slow and vice versa. }}\n{{trim}}\n",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "65518bd0-4ef3-4326-8999-11f7b61cb3fd",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "---Plot Momentum--- (How scenes should end)",
+      "role": "system",
+      "content": "",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "8ac12724-a7c0-4b84-a711-8e0e04377d0a",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Responsive (Response should not progress past input)",
+      "role": "system",
+      "content": "<plot_momentum>\nThe story's momentum is Responsive: the turn resolves {{user}}'s input and lets the world react naturally.  Introduce nothing beyond the input, no new consequences, no new events.\n</plot_momentum>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "71de43c0-836c-4959-970a-d8ff1101be84",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Active (Responses are allowed to progress past input)",
+      "role": "system",
+      "content": "<plot_momentum>\nThe story's momentum is Active: the turn resolves {{user}}'s input and carries the scene forward on its own. Characters pursue their own aims and events continue whether or not the POV character drives them.\n\nDon't make any major decisions for the POV Character beyond their input\n</plot_momentum>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "a76900ce-2322-499b-bef8-cf8b645ed617",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Driving (Responses should always end on an a scene demanding a response)",
+      "role": "system",
+      "content": "<plot_momentum>\nThe story's momentum is Driving: Scene always ends on an unresolved action, arrival, question, threat or open ended action from characters other than the POV character that demands a response. \n\nCharacters pursue their own aims and events continue whether or not {{user}} drives them.\n</plot_momentum>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "05c87fa1-7439-4f74-a436-6e77820de6aa",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "---Tone Volatility---(How often Tones should change per beat",
+      "role": "system",
+      "content": "\n",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "70c29d9a-3eaa-4db0-924e-f22a4b9e1aca",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "(README! Tonal Volatility ",
+      "role": "system",
+      "content": "{{// Tonal Volatility \n\nThis is where things get fun and where your chosen tones come into play as it will make the AI plan out the scene with your chosen tones. If you choose contrasting tones, tonal volatility will be a powerful tool to keep your stories interesting. Like it can be both Absurdist and Serious at the same time. \n\nOverview: \nStable: Mixes all of your tones for the scene, good if you chosen a few tones or want a consistent tone.\n\nShifting: AI will choose your chosen tones to plan out the scene and shift tones when needed. Good if you selected a lot. \n\nWhiplash: AI will attempt to change the tone each PARAGRAPH. \n\nA little background, tonal volatility is the reason why i made this preset in the first place because i wanted to replicate the absurdity and seriousness of MGS: Twin Snakes and i went overboard.\n\nMGS Twin Snakes would use Serious and Absurdist as tones, with its volatility being Whiplash.  }}\n",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "a32e89d0-000b-4654-816c-9f362cc8851c",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Stable (Mix tones for all beats. Use if you chose a few tones)",
+      "role": "system",
+      "content": "<tonal_volatility>\nChosen narrative voice and world tones should be Stable: Apply all active tones to every beat at once; give no tone a beat to itself.\n</tonal_volatility>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "227a0c3f-cfa4-4088-9ee4-23c9919c23d1",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Shifting (Selects one tone for each beat, use if you chose a lot of tones)",
+      "role": "system",
+      "content": "<tonal_volatility>\n# Tonal Volatility\nChosen narrative voice and world tones should be Shifting: Select one active tone per beat; switch whenever the beat's emotional content changes.\n</tonal_volatility>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "1e8f9714-b51c-444d-90b7-40d9cec4391d",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Whiplash (Selects one tone for each PARAGRAPH. For wackier styles)",
+      "role": "system",
+      "content": "<tonal_volatility>\n# Tonal Volatility\nChosen narrative voice and world tones should Whiplash: Select one active tone per paragraph, do not use the same tone in a row; change without transition or setup, and revert just as fast no matter the context of the scene.\n</tonal_volatility>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
     }
   ],
   "prompt_order": [
@@ -777,6 +917,26 @@
         {
           "identifier": "4fc1f4bb-71ba-4b5c-bddd-d7f25c75f6e5",
           "enabled": true
+        },
+        {
+          "identifier": "d5584bb6-9138-45cc-b6a8-9ad2f46d3fb1",
+          "enabled": true
+        },
+        {
+          "identifier": "65518bd0-4ef3-4326-8999-11f7b61cb3fd",
+          "enabled": true
+        },
+        {
+          "identifier": "8ac12724-a7c0-4b84-a711-8e0e04377d0a",
+          "enabled": false
+        },
+        {
+          "identifier": "71de43c0-836c-4959-970a-d8ff1101be84",
+          "enabled": true
+        },
+        {
+          "identifier": "a76900ce-2322-499b-bef8-cf8b645ed617",
+          "enabled": false
         },
         {
           "identifier": "7c2b6c2f-a6c9-45ce-99de-11e1eeaa2dca",
@@ -965,6 +1125,26 @@
         {
           "identifier": "9079fe3c-55fc-418d-8e12-04f3a1176d8d",
           "enabled": true
+        },
+        {
+          "identifier": "05c87fa1-7439-4f74-a436-6e77820de6aa",
+          "enabled": true
+        },
+        {
+          "identifier": "70c29d9a-3eaa-4db0-924e-f22a4b9e1aca",
+          "enabled": true
+        },
+        {
+          "identifier": "a32e89d0-000b-4654-816c-9f362cc8851c",
+          "enabled": true
+        },
+        {
+          "identifier": "227a0c3f-cfa4-4088-9ee4-23c9919c23d1",
+          "enabled": false
+        },
+        {
+          "identifier": "1e8f9714-b51c-444d-90b7-40d9cec4391d",
+          "enabled": false
         },
         {
           "identifier": "chatHistory",
