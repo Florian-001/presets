@@ -884,6 +884,1098 @@
       "injection_order": 100,
       "injection_trigger": [],
       "forbid_overrides": false
+    },
+    {
+      "identifier": "f81f3e10-ca2d-4f6a-b60d-b095bd4c849b",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Universal Dialogue Rules",
+      "role": "system",
+      "content": "<dialogue>\n# DIALOGUE \nDialogue = Baseline Voice + Regional Texture + Current State. Each character has a distinct, recognizable idiolect; vocabulary reflects background.\n\n- Em-dashes (—) for interruptions.\n- Regional speech patterns may mirror real-world dialects, but lexical choices derive from in-world geography, history, and culture.\n\n# State Modifiers\n- Anger: clipped syntax, hedging dropped, volume shown via word choice.\n- Fear: fragmented sentences, false starts.\n- Drunk: lost trains of thought, repetition, inappropriate honesty.\n- Exhausted: shorter utterances, delays, missing words.\n- Lying: over-specificity, increased hedging, unnatural smoothness or stutter.\n- Seduction: slower rhythm, more pauses, suggestive ambiguity.\n- Authority: fewer words, statements over questions.\n</dialogue>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "776e12e7-bb91-4ee9-b364-866702cd4b66",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "---Vocabulary Level---",
+      "role": "system",
+      "content": "",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "3d19280b-afb9-4a42-bcd4-d4c827a304d0",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Plain (Everyday words)",
+      "role": "system",
+      "content": "<vocabulary_level> \nVocabulary level of narration prose should be Plain: Common words only. Concrete nouns, everyday verbs, no elevated synonyms, informal.\n</vocabulary_level> ",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "7b35696a-a728-44a5-b5e8-f59ceb177ff1",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Clean (Standard Novel Prose)",
+      "role": "system",
+      "content": "<vocabulary_level> \nVocabulary level of narration prose should be Clean: Standard contemporary novel prose. Precise word choice.\n</vocabulary_level> ",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "2e70e610-556b-4517-b5a3-1012f33a6cfb",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Literary",
+      "role": "system",
+      "content": "<vocabulary_level> \nVocabulary level in narration prose should be Literary: Deliberate, textured diction. Uncommon words are used where they carry meaning a common word wouldn't.\n</vocabulary_level> ",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "c61bc7c4-977b-43a4-a91b-152f4b8890b3",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Purple ",
+      "role": "system",
+      "content": "<vocabulary_level>  \nVocabulary level in narration prose choices should be Purple: Elevated register throughout. Formal syntax, Latinate word choice, rare and archaic words used freely.\n</vocabulary_level> ",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "20069e28-9c6d-4475-b95e-7dc321c2d59b",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Adaptive Based on Protagonist",
+      "role": "system",
+      "content": "<vocabulary_level> \nVocabulary level in narration lexicon should be Adaptive: Narration lexicon derives from the POV character's profile: class, education, age, occupation, and era appropriate word choice. \n</vocabulary_level> ",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "7ab19cbb-02ef-40a7-a905-d3fa1c9763b5",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "---Response Length--- (Paragraphs needed,  Paragraphs containing dialogues don't count towards paragraph limit.)",
+      "role": "system",
+      "content": "",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "3640a447-f687-4477-9954-9126cde01cbe",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Short (under 4 paragraphs)",
+      "role": "system",
+      "content": "<response_length>\nYour response should be under 4 paragraphs. Paragraphs containing dialogues don't count towards paragraph limit.\n</response_length>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "c8ed6bc6-3c44-4371-bba2-9b2d3264315a",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Adaptive Short",
+      "role": "system",
+      "content": "<response_length>\nYour response length is Adaptive Short. The length is based on type of scene beat. Paragraphs containing dialogues don't count towards paragraph limit.\n\nDevelopmental: Under four \nTransitional: Under three\nReactive: under two\nClimax: under six. \n</response_length>\n",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "7be471b3-be43-4b36-92f3-6844e06cb552",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Medium (under 8 paragraphs)",
+      "role": "system",
+      "content": "<response_length>\nYour response should be under 8 paragraphs. Paragraphs containing dialogues don't count towards paragraph limit.\n</response_length>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "ded0e680-caae-480a-9e1d-15ebebf3e2b4",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Adaptive Medium",
+      "role": "system",
+      "content": "<response_length>\nYour response length is Adaptive Medium. The length is based on type of scene beat. Paragraphs containing dialogues don't count towards paragraph limit.\n\nDevelopmental: Under eight\nTransitional: Under four\nReactive: Under three\nClimax: Under ten\n</response_length>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "4c091fe9-ca1b-4a1d-9bab-1d4a7525e429",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Long (4 minimum paragraphs, allowed to be 12+)",
+      "role": "system",
+      "content": "<response_length>\nYour response should can be 12+ paragraphs, minimum 4 paragraphs needed. Paragraphs containing dialogues don't count towards paragraph limit.\n</response_length>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "8e4acefc-b319-436d-8e55-36c1ae015247",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Adaptive Long",
+      "role": "system",
+      "content": "<response_length>\nYour response length is Adaptive Long. The length is based on type of scene beat. Paragraphs containing dialogues don't count towards paragraph limit.\n\nDevelopmental: Under nine\nTransitional: Under five\nReactive: Under four\nClimax: 12+, use many paragraphs as needed. \n</response_length>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "1b6a78e5-4518-47d2-8c54-9ee4060baefa",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "No set limit",
+      "role": "system",
+      "content": "<response_length>\nYour response length is Not Set: Determine paragraphs needed for scene. Use as much it the scene demands to immerse the reader. It can be long as 12+ paragraphs or short as 2 paragraphs. \n</response_length>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "0f969214-2fe7-495c-bd01-f11d59130a4a",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "---Paragraph Density--- (Sentences per Paragraph)",
+      "role": "system",
+      "content": "",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "92bf6795-e467-4ad3-a315-66d9160207df",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Minimal (1-2 sentences)",
+      "role": "system",
+      "content": "<paragraph_density>\nParagraphs should be Minimal: One to two sentences per paragraph. Frequent paragraph breaks; heavy white space. \n\nDialogues are unaffected and don't count as sentences.\n</paragraph_density>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "05f6e108-d160-4789-a1f0-f911da10e41b",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Light  (2-3 sentences)",
+      "role": "system",
+      "content": "<paragraph_density>\nParagraphs should be Light: Two to three sentences of narration per paragraph. Breaks come often.\n\nDialogues are unaffected and don't count as sentences.\n</paragraph_density>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "cdade6f2-aa2c-4414-9fdd-d29c735db048",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Standard (2-5 sentences)",
+      "role": "system",
+      "content": "<paragraph_density>\nParagraphs should be Standard: Two to five sentences of narration per paragraph. Conventional novel paragraphing; a paragraph holds one beat and closes. \n\nDialogues are unaffected and don't count as sentences.\n</paragraph_density>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "518ab104-430b-48b6-9ad5-42a2e36578da",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Full (3-8 sentences)",
+      "role": "system",
+      "content": "<paragraph_density>\nParagraphs should be Full: three to eight sentences per paragraph. Paragraphs accumulate detail before breaking; a single block can carry an entire action or observation sequence. \n\nDialogues are unaffected and don't count as sentences.\n</paragraph_density>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "218f5630-0109-47d8-8734-3b3f848d1fa3",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Dense (8+ sentences)",
+      "role": "system",
+      "content": "<paragraph_density>\nParagraphs should be Dense: Eight or more sentences of narration per paragraph. Breaks occur only at hard shifts in subject or scene; description, action, and interiority together. \n\nDialogues are unaffected and don't count as sentences.\n</paragraph_density>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "f82824da-9abe-425b-83a7-cfc229ecedd0",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Adaptive Density ",
+      "role": "system",
+      "content": "<paragraph_density>\nParagraphs should be Adaptive: Determine required number of sentences of narration needed per paragraph for scene. Use as much it the scene demands. Developmental and transitional scenes should have 1-5 sentences, reactive should have 1-2, climax can be 1-8. \n\nDialogues are unaffected and don't count as sentences.\n</paragraph_density>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "55ba2489-343f-4fa6-ab71-c38274cf9e40",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "---Sentence Rhythm--- ",
+      "role": "system",
+      "content": "",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "c4aeb8a7-5831-48cd-881a-78f7d6816067",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Standard",
+      "role": "system",
+      "content": "<sentence_rhythm>\nSentences in narration should be Standard: Use multiclausal sentences to vary prose rhythm.\n\nDoes not affect dialogue \n</sentence_rhythm>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "76b94f7b-2752-40cd-a640-fc85c2d03041",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Sprawling ",
+      "role": "system",
+      "content": "<sentence_rhythm>\nSentences in narration should be Sprawling: Long, clause-heavy sentences run as the default. \n\nDoes not affect dialogue \n</sentence_rhythm>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "50fbca15-d519-4530-a5e7-b833c705e5f3",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Percussive ",
+      "role": "system",
+      "content": "<sentence_rhythm>\nSentences in narration should be Percussive: Short punchy sentences dominate. Fragments are permitted.\n\nDoes not affect dialogue \n</sentence_rhythm>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "9337bbb2-f7a1-44b0-a601-9e36e61ec8a0",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Dynamic ",
+      "role": "system",
+      "content": "<sentence_rhythm>\nSentences in narration should be Dynamic: Sentence length follows what the scene is doing. Use multiclausal sentences to vary prose rhythm.\n\n- Physical action: short sentences and fragments. Visceral verbs, minimal subordination. \"He lunged. A crack of bone. Pain exploded.\"\n\n- Interiority and observation: longer, subordinated sentences that let a thought extend. The scene may pause while the character thinks.\n\n</sentence_rhythm>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "eada037b-d702-4a90-ae27-8b1c18228e08",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "---Figurative Language Frequency--- ",
+      "role": "system",
+      "content": "",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "fbc9f805-391f-478b-887a-007b4e56b3f2",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "None",
+      "role": "system",
+      "content": "<figurative_language>\nUsage of figurative language (Similes, metaphors, hyperbole, idioms, etc.)  should be None: No figurative language. Descriptions are literal and direct.\n</figurative_language>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "13718bd5-a9f2-4c53-87bf-f6fdb21db7c0",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Sparse (1 figurative image)",
+      "role": "system",
+      "content": "<figurative_language>\nFigurative language (Similes, metaphors, hyperbole, idioms, etc.) should be Sparse: One figurative image only for this generation, reserved for moments that carry weight. Most description stays literal.\n</figurative_language>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "40e1c199-feba-4582-bb1b-a5c8bbb63969",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Moderate (1 figurative image per several pargraphs)",
+      "role": "system",
+      "content": "<figurative_language>\nFigurative language frequency (Similes, metaphors, hyperbole, idioms, etc.) should be Moderate: Roughly one per several paragraphs, reserved for moments that carry weight. Most descriptions stay direct.\n</figurative_language>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "35fdbbfb-9d2c-4873-a41a-de6d6f408c60",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Rich (multiple figurative images per paragaph )",
+      "role": "system",
+      "content": "<figurative_language>\nFigurative language (Similes, metaphors, hyperbole, idioms, etc.) should be Rich: Multiple per paragraph. Comparison is a primary descriptive tool\n</figurative_language>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "8866b97b-85af-4d05-af19-7145dab6a7fe",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Saturated (fuckton of figurative images)",
+      "role": "system",
+      "content": "<figurative_language>\nFigurative language (Similes, metaphors, hyperbole, idioms, etc.) should be Saturated: Figurative language governs. Images extend, compound, and sustain across sentences.\n</figurative_language>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "e9a3ab53-92ff-4b31-925b-94eb70f1287e",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Adaptive Frequency ",
+      "role": "system",
+      "content": "<figurative_language>\nFigurative language (Similes, metaphors, hyperbole, idioms, etc.) should Adaptive: Default to literal description. Figurative language is reserved for beats that carry weight: emotional turns, first sight of something significant, moments of physical or psychological extremity. Routine action, transitional movement, and functional description stay literal.\n</figurative_language>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "97413c9e-209a-4063-a6cc-57bb803bd761",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "---Tense---",
+      "role": "system",
+      "content": "",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "d9fb08e3-194f-4342-9b85-2aa9eed0a628",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Present-Tense",
+      "role": "system",
+      "content": "<tense>\nNarration is in present tense.\n</tense>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "75496cc1-24a3-417d-a5dd-876d3468762a",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Past-Tense ",
+      "role": "system",
+      "content": "<tense>\nNarration is in past tense.\n</tense>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "0f2597a5-150c-439d-a6c7-bcdcdf1a52cf",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "---Narrative Distance of Characters--- (Determines internal thoughts and emotions appearing in story)",
+      "role": "system",
+      "content": "",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "f0c398c0-798d-4273-b3eb-7136caec4f28",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "(leave this prompt on)",
+      "role": "system",
+      "content": "<narrative_distance>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "15f8f7e4-afa4-4b72-be52-9e55f7a41a39",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Remote",
+      "role": "system",
+      "content": "- The narration distance is Remote: Observes from outside all characters. Interiority is unavailable. Do not show thoughts. \n",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "38e41126-b8e0-4b28-9f38-d351f9eadacc",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Objective",
+      "role": "system",
+      "content": "- The narration distance is Objective: Close to the characters physically. Their actions and sensations are reported; Do not show internal thoughts and feelings of anyone. Narration keeps its own voice separate.\n",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "e5df3c56-67dc-44c6-9fb1-b31eda6fd80d",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Standard",
+      "role": "system",
+      "content": "- The narration distance is Standard: The POV character's thoughts and feelings are reported, but the narration keeps its own voice separate from theirs. Use italics to show their thoughts.\n\n",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "80c93b95-f45a-4504-ad6e-ecbbafaec8c5",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Close",
+      "role": "system",
+      "content": "- The narration distance is Close: Narration takes on the POV character's perceptions and biases. What gets noticed, and how it's characterized, reflects their state of mind. Use italics to show their thoughts.\n",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "f82c5254-11b4-4c50-88e4-c26d147b845c",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Free Indirect Discourse",
+      "role": "system",
+      "content": "- The narration distance is Free Indirect Discourse: The narrative voice and the POV character's voice merge; their diction, judgments, and distortions appear in the narration itself without attribution, quotation marks or italics. \n",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "3c5fefb8-c956-47b7-9f60-a88cfed691b5",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "(Optional) Show Side Character Thoughts ",
+      "role": "system",
+      "content": "- You must show thoughts of other characters in italics. ",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "0ccda90f-2183-4f68-984f-1ca69001e388",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "(leave this prompt on)",
+      "role": "system",
+      "content": "</narrative_distance>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "c79717b8-47b6-4950-83b1-ad933b0d21cc",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "---Internal Thoughts Frequency---(Optional)",
+      "role": "system",
+      "content": "",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "fa0e6e98-50fa-4a46-907d-5c7e9ce2d9a9",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Occasional ",
+      "role": "system",
+      "content": "<internal_thoughts>\nInteriority in narration is Occasional: Only a line or two of internal thought per generation, at decision points and reactions from the POV character.\n</internal_thoughts>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "44bf6608-dc4c-4370-8cb7-6225f51bb09c",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Frequent",
+      "role": "system",
+      "content": "<internal_thoughts>\nInteriority in narration is Frequent: most beats carry a reaction in thought. The POV character's running commentary is a constant presence alongside the action. \n</internal_thoughts>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "2763b4b0-12f4-46bc-8023-539c51b66986",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Constant ",
+      "role": "system",
+      "content": "<internal_thoughts>\nInteriority in narration is Constant: narration is the POV character's continuous internal monologue. Every event is filtered through immediate reaction, aside, and commentary including asides that interrupt the action mid-beat.\n</internal_thoughts>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "488648d2-6b9f-445a-92ba-a399bae9e938",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "---Show And Tell Levels--- (How often emotions are directly told)",
+      "role": "system",
+      "content": "",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "8b92b62f-5969-4345-97b5-0f546de86825",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Pure Tell",
+      "role": "system",
+      "content": "<showandtell>\nIn narration, show and tell should be Pure Tell: Emotions and character traits are reported plainly and explicitly. The narration says what characters feel think, and are.\n</showandtell>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "399043b0-4223-4535-8005-e8c8c2a9f463",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Tell-Weighted",
+      "role": "system",
+      "content": "<showandtell>\nIn narration, show and tell should be Tell-Weighted: Emotion and character traits are stated directly. Behavior supplements the statement rather than replacing it; showing is reserved for the scene's strongest beats.\n</showandtell>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "183ae81e-c54c-463f-97da-e7d4e13b1172",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Balanced",
+      "role": "system",
+      "content": "<showandtell>\nIn narration, show and tell should be Balanced: Emotion and character traits may be named where naming it is efficient, and shown using physical actions.\n</showandtell>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "0406a465-63c6-4f6a-9039-62189ffb2497",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Show-Weighted",
+      "role": "system",
+      "content": "<showandtell>\nIn narration, show and tell should be Show-Weighted: Emotion and character traits is conveyed through physical actions by default. Direct statement of emotions and traits appears only where behavior would be ambiguous.\n</showandtell>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "9f299973-084b-42e4-9da6-898e98dac1f2",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Pure Show",
+      "role": "system",
+      "content": "<showandtell>\nIn narration, show and tell should be Pure Show: Emotion and character traits is never stated. Both are conveyed through action, physical response, dialogue, and what the character attends to.\n</showandtell>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "5ce32676-e012-4b2e-b1ac-456efaa440ac",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Adaptive Show and Tell",
+      "role": "system",
+      "content": "<showandtell>\nIn narration, show and tell should be Adaptive:\n- Show by default. Scene-critical emotion — turns, revelations is shown.\n- Tell where efficiency matters more than immersion. Minor emotional beats, transitional passages, and background characters are stated plainly. \n</showandtell>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "37ed65f8-ecdc-4e3f-ad94-c77f60cbe6bd",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "---PoV---",
+      "role": "system",
+      "content": "",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "dcc61800-5e09-4671-a74e-09d617ca1a19",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "1st Person",
+      "role": "system",
+      "content": "<pov>\nFirst person of the POV character. Use \"I\", \"Me\" etc.\n</pov>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "4bf7e55b-a9e7-4634-b6a1-1e45b03ac1b5",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "2nd Person",
+      "role": "system",
+      "content": "<pov>\nSecond Person of the POV character. Use \"You\"\n</pov>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "ad8639a1-3a06-46eb-b209-876776265d6d",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "3rd Person",
+      "role": "system",
+      "content": " <pov>\nThird Person of the POV character\n</pov>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "364039ce-eca8-455a-9105-7a5eeebe4802",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Shifting 3rd POV",
+      "role": "system",
+      "content": "<pov>\nPoint of View: Shifting Third Person. The usual POV is the POV character in third person but you are allowed to change the POV to other characters for story impact. Break paragraph and use \"***\" to indicate change of character.\n</pov>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "2aec6c0b-55bf-45f1-b1ef-32906fc333c1",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "---Dialogue Frequency---",
+      "role": "system",
+      "content": "",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "00b97704-bbae-4b89-a414-a216ebc1d503",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Silent",
+      "role": "system",
+      "content": "<dialogue_frequency>\nDialogue frequency should be Silent: Dialogue is rare. Scenes are carried by action, observation, and interiority; characters speak only when speech is the only option available. Aim for 0%-10% dialogue, 90%-100% narration. \n</dialogue_frequency>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "feed2b22-28b4-4020-b6ef-93b569033c6d",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Sparse",
+      "role": "system",
+      "content": "<dialogue_frequency>\nDialogue frequency should be Sparse: A few exchanged lines per conversation with narration doing the primary work between them. Aim for 20%-30% dialogue, 70% narration. \n\nScene can be silent if it makes sense. \n</dialogue_frequency>\n",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "0db6924e-c52f-490b-8476-ea94266dab07",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Balanced",
+      "role": "system",
+      "content": "<dialogue_frequency>\nDialogue frequency should be Balanced: Conversations run to natural length. 50% dialogue, 50% narration. \n\nScene can be silent if it makes sense. \n</dialogue_frequency>\n",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "812bc080-7e80-46e4-9138-2c364e639f59",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Often",
+      "role": "system",
+      "content": "<dialogue_frequency>\nDialogue frequency should be Often: Frequent dialogue, speech leads. Most scenes are built around conversation, with narration serving as connective tissue and staging between lines. 70% dialogue, 30% narration. \n\nScene can be silent if it makes sense. \n</dialogue_frequency>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "6e6c8c14-d0b8-4489-a5dc-3e11fc68e2f0",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Talkative",
+      "role": "system",
+      "content": "<dialogue_frequency>\nDialogue frequency should be Talkative: Dialogue dominates. Exchanges run at length, characters speak in extended turns, and narration reduces to minimal staging. Aim for 80%-90% dialogue, 10%-20% narration.\n\nScene can be silent if it makes sense. \n</dialogue_frequency>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "5a28488a-49d4-4258-ab01-4e862ba2ddee",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "---Dialogue Naturalism---(How clean dialogue is)",
+      "role": "system",
+      "content": "",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "c7fadf92-9e5d-443c-93b4-5753c9515fc9",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Literary ",
+      "role": "system",
+      "content": "<dialogue_naturalism>\nDialogue should be Literary: Standard novel dialogue. Contractions and fragments are natural; interruptions occur, but speech stays clean and purposeful. No filler words, no stumbling.\n</dialogue_naturalism>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "9401edb0-47db-4d12-8e13-825f0e57f0e1",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Casual",
+      "role": "system",
+      "content": "<dialogue_naturalism>\nDialogue should be Colloquial: Speech loosens. Slang, regional phrasing, sentence fragments, characters talking over each other and trailing off. Reads like a real conversation\n</dialogue_naturalism>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "0ddf4b72-49f8-40f3-ae2e-4ea437f2a677",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Verbatim",
+      "role": "system",
+      "content": "<dialogue_naturalism>\nDialogue should be Verbatim: Full disfluency. Filler words (\"Um.\",\"like.\", \"okay.\" etc.), false starts, self-corrections, repetitions, and trailing sentences. Disfluency scales with emotional state. Calm speech is close to casual and colloquial, and stress, drunkenness, exhaustion, or grief break it apart\n</dialogue_naturalism>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "a64f8f4a-5509-4889-b328-2f948253edcb",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "---Dialogue Depth--- (How deep conversations can go)",
+      "role": "system",
+      "content": "",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "9032aed2-69d7-4999-ad48-4bdd7f4e5884",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Surface Level",
+      "role": "system",
+      "content": "<dialogue_depth>\nDepth of dialogue should be Surface Level: Speech is factual and direct, no deeper thoughts. Talk stays concrete and present-tense in scope: what characters want, see, and feel right now. \n</dialogue_depth>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "a5a83f98-97cb-43d5-97ea-8878370e03dd",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Grounded",
+      "role": "system",
+      "content": "<dialogue_depth>\nDepth of dialogue should be Grounded: Occasional reflection or generalization, tied closely to the scene at hand. A character may draw a conclusion about themselves or someone else, but the abstraction stays short and returns to the concrete.\n</dialogue_depth>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "64f022e8-f581-40e1-b16c-ba841f48e3ab",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Layered",
+      "role": "system",
+      "content": "<dialogue_depth>\nDepth of dialogue should be Layered: Conversations carry more than their surface. Characters argue past the ostensible subject. Abstraction is present.\n</dialogue_depth>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "def2fa93-a4a7-4c40-8853-163ec40141aa",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Philosophical ",
+      "role": "system",
+      "content": "<dialogue_depth>\nDepth of dialogue should be Philosophical: Characters theorize, generalize, and pivot from concrete detail to abstract meaning. Digressions are permitted and extended; a conversation may leave its original subject and not return.\n</dialogue_depth>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "e75432dd-d888-4af7-97b1-b4a99610d5d2",
+      "system_prompt": false,
+      "enabled": false,
+      "marker": false,
+      "name": "Realistic",
+      "role": "system",
+      "content": "<dialogue_depth>\nDepth of dialogue should be Realistic: Depth follows what the speaker is capable of and what the moment supports. Functional exchanges stay functional; pressure, intimacy, and idleness are the conditions under which characters reach for larger statements. Education, temperament, and self-awareness cap how abstract any given character gets.\n</dialogue_depth>",
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_trigger": [],
+      "forbid_overrides": false
     }
   ],
   "prompt_order": [
@@ -916,6 +2008,10 @@
         },
         {
           "identifier": "4fc1f4bb-71ba-4b5c-bddd-d7f25c75f6e5",
+          "enabled": true
+        },
+        {
+          "identifier": "f81f3e10-ca2d-4f6a-b60d-b095bd4c849b",
           "enabled": true
         },
         {
@@ -1144,6 +2240,314 @@
         },
         {
           "identifier": "1e8f9714-b51c-444d-90b7-40d9cec4391d",
+          "enabled": false
+        },
+        {
+          "identifier": "776e12e7-bb91-4ee9-b364-866702cd4b66",
+          "enabled": true
+        },
+        {
+          "identifier": "3d19280b-afb9-4a42-bcd4-d4c827a304d0",
+          "enabled": true
+        },
+        {
+          "identifier": "7b35696a-a728-44a5-b5e8-f59ceb177ff1",
+          "enabled": false
+        },
+        {
+          "identifier": "2e70e610-556b-4517-b5a3-1012f33a6cfb",
+          "enabled": false
+        },
+        {
+          "identifier": "c61bc7c4-977b-43a4-a91b-152f4b8890b3",
+          "enabled": false
+        },
+        {
+          "identifier": "20069e28-9c6d-4475-b95e-7dc321c2d59b",
+          "enabled": false
+        },
+        {
+          "identifier": "7ab19cbb-02ef-40a7-a905-d3fa1c9763b5",
+          "enabled": true
+        },
+        {
+          "identifier": "3640a447-f687-4477-9954-9126cde01cbe",
+          "enabled": true
+        },
+        {
+          "identifier": "c8ed6bc6-3c44-4371-bba2-9b2d3264315a",
+          "enabled": false
+        },
+        {
+          "identifier": "7be471b3-be43-4b36-92f3-6844e06cb552",
+          "enabled": false
+        },
+        {
+          "identifier": "ded0e680-caae-480a-9e1d-15ebebf3e2b4",
+          "enabled": false
+        },
+        {
+          "identifier": "4c091fe9-ca1b-4a1d-9bab-1d4a7525e429",
+          "enabled": false
+        },
+        {
+          "identifier": "8e4acefc-b319-436d-8e55-36c1ae015247",
+          "enabled": false
+        },
+        {
+          "identifier": "1b6a78e5-4518-47d2-8c54-9ee4060baefa",
+          "enabled": false
+        },
+        {
+          "identifier": "0f969214-2fe7-495c-bd01-f11d59130a4a",
+          "enabled": true
+        },
+        {
+          "identifier": "92bf6795-e467-4ad3-a315-66d9160207df",
+          "enabled": false
+        },
+        {
+          "identifier": "05f6e108-d160-4789-a1f0-f911da10e41b",
+          "enabled": false
+        },
+        {
+          "identifier": "cdade6f2-aa2c-4414-9fdd-d29c735db048",
+          "enabled": true
+        },
+        {
+          "identifier": "518ab104-430b-48b6-9ad5-42a2e36578da",
+          "enabled": false
+        },
+        {
+          "identifier": "218f5630-0109-47d8-8734-3b3f848d1fa3",
+          "enabled": false
+        },
+        {
+          "identifier": "f82824da-9abe-425b-83a7-cfc229ecedd0",
+          "enabled": false
+        },
+        {
+          "identifier": "55ba2489-343f-4fa6-ab71-c38274cf9e40",
+          "enabled": true
+        },
+        {
+          "identifier": "c4aeb8a7-5831-48cd-881a-78f7d6816067",
+          "enabled": false
+        },
+        {
+          "identifier": "76b94f7b-2752-40cd-a640-fc85c2d03041",
+          "enabled": false
+        },
+        {
+          "identifier": "50fbca15-d519-4530-a5e7-b833c705e5f3",
+          "enabled": true
+        },
+        {
+          "identifier": "9337bbb2-f7a1-44b0-a601-9e36e61ec8a0",
+          "enabled": false
+        },
+        {
+          "identifier": "eada037b-d702-4a90-ae27-8b1c18228e08",
+          "enabled": true
+        },
+        {
+          "identifier": "fbc9f805-391f-478b-887a-007b4e56b3f2",
+          "enabled": true
+        },
+        {
+          "identifier": "13718bd5-a9f2-4c53-87bf-f6fdb21db7c0",
+          "enabled": false
+        },
+        {
+          "identifier": "40e1c199-feba-4582-bb1b-a5c8bbb63969",
+          "enabled": false
+        },
+        {
+          "identifier": "35fdbbfb-9d2c-4873-a41a-de6d6f408c60",
+          "enabled": false
+        },
+        {
+          "identifier": "8866b97b-85af-4d05-af19-7145dab6a7fe",
+          "enabled": false
+        },
+        {
+          "identifier": "e9a3ab53-92ff-4b31-925b-94eb70f1287e",
+          "enabled": false
+        },
+        {
+          "identifier": "97413c9e-209a-4063-a6cc-57bb803bd761",
+          "enabled": true
+        },
+        {
+          "identifier": "d9fb08e3-194f-4342-9b85-2aa9eed0a628",
+          "enabled": false
+        },
+        {
+          "identifier": "75496cc1-24a3-417d-a5dd-876d3468762a",
+          "enabled": false
+        },
+        {
+          "identifier": "0f2597a5-150c-439d-a6c7-bcdcdf1a52cf",
+          "enabled": true
+        },
+        {
+          "identifier": "f0c398c0-798d-4273-b3eb-7136caec4f28",
+          "enabled": true
+        },
+        {
+          "identifier": "15f8f7e4-afa4-4b72-be52-9e55f7a41a39",
+          "enabled": false
+        },
+        {
+          "identifier": "38e41126-b8e0-4b28-9f38-d351f9eadacc",
+          "enabled": false
+        },
+        {
+          "identifier": "e5df3c56-67dc-44c6-9fb1-b31eda6fd80d",
+          "enabled": false
+        },
+        {
+          "identifier": "80c93b95-f45a-4504-ad6e-ecbbafaec8c5",
+          "enabled": false
+        },
+        {
+          "identifier": "f82c5254-11b4-4c50-88e4-c26d147b845c",
+          "enabled": false
+        },
+        {
+          "identifier": "3c5fefb8-c956-47b7-9f60-a88cfed691b5",
+          "enabled": false
+        },
+        {
+          "identifier": "0ccda90f-2183-4f68-984f-1ca69001e388",
+          "enabled": true
+        },
+        {
+          "identifier": "c79717b8-47b6-4950-83b1-ad933b0d21cc",
+          "enabled": true
+        },
+        {
+          "identifier": "fa0e6e98-50fa-4a46-907d-5c7e9ce2d9a9",
+          "enabled": true
+        },
+        {
+          "identifier": "44bf6608-dc4c-4370-8cb7-6225f51bb09c",
+          "enabled": false
+        },
+        {
+          "identifier": "2763b4b0-12f4-46bc-8023-539c51b66986",
+          "enabled": false
+        },
+        {
+          "identifier": "488648d2-6b9f-445a-92ba-a399bae9e938",
+          "enabled": true
+        },
+        {
+          "identifier": "8b92b62f-5969-4345-97b5-0f546de86825",
+          "enabled": true
+        },
+        {
+          "identifier": "399043b0-4223-4535-8005-e8c8c2a9f463",
+          "enabled": false
+        },
+        {
+          "identifier": "183ae81e-c54c-463f-97da-e7d4e13b1172",
+          "enabled": false
+        },
+        {
+          "identifier": "0406a465-63c6-4f6a-9039-62189ffb2497",
+          "enabled": false
+        },
+        {
+          "identifier": "9f299973-084b-42e4-9da6-898e98dac1f2",
+          "enabled": false
+        },
+        {
+          "identifier": "5ce32676-e012-4b2e-b1ac-456efaa440ac",
+          "enabled": false
+        },
+        {
+          "identifier": "37ed65f8-ecdc-4e3f-ad94-c77f60cbe6bd",
+          "enabled": true
+        },
+        {
+          "identifier": "dcc61800-5e09-4671-a74e-09d617ca1a19",
+          "enabled": false
+        },
+        {
+          "identifier": "4bf7e55b-a9e7-4634-b6a1-1e45b03ac1b5",
+          "enabled": false
+        },
+        {
+          "identifier": "ad8639a1-3a06-46eb-b209-876776265d6d",
+          "enabled": false
+        },
+        {
+          "identifier": "364039ce-eca8-455a-9105-7a5eeebe4802",
+          "enabled": false
+        },
+        {
+          "identifier": "2aec6c0b-55bf-45f1-b1ef-32906fc333c1",
+          "enabled": true
+        },
+        {
+          "identifier": "00b97704-bbae-4b89-a414-a216ebc1d503",
+          "enabled": false
+        },
+        {
+          "identifier": "feed2b22-28b4-4020-b6ef-93b569033c6d",
+          "enabled": false
+        },
+        {
+          "identifier": "0db6924e-c52f-490b-8476-ea94266dab07",
+          "enabled": false
+        },
+        {
+          "identifier": "812bc080-7e80-46e4-9138-2c364e639f59",
+          "enabled": true
+        },
+        {
+          "identifier": "6e6c8c14-d0b8-4489-a5dc-3e11fc68e2f0",
+          "enabled": false
+        },
+        {
+          "identifier": "5a28488a-49d4-4258-ab01-4e862ba2ddee",
+          "enabled": true
+        },
+        {
+          "identifier": "c7fadf92-9e5d-443c-93b4-5753c9515fc9",
+          "enabled": true
+        },
+        {
+          "identifier": "9401edb0-47db-4d12-8e13-825f0e57f0e1",
+          "enabled": false
+        },
+        {
+          "identifier": "0ddf4b72-49f8-40f3-ae2e-4ea437f2a677",
+          "enabled": false
+        },
+        {
+          "identifier": "a64f8f4a-5509-4889-b328-2f948253edcb",
+          "enabled": true
+        },
+        {
+          "identifier": "9032aed2-69d7-4999-ad48-4bdd7f4e5884",
+          "enabled": false
+        },
+        {
+          "identifier": "a5a83f98-97cb-43d5-97ea-8878370e03dd",
+          "enabled": false
+        },
+        {
+          "identifier": "64f022e8-f581-40e1-b16c-ba841f48e3ab",
+          "enabled": false
+        },
+        {
+          "identifier": "def2fa93-a4a7-4c40-8853-163ec40141aa",
+          "enabled": false
+        },
+        {
+          "identifier": "e75432dd-d888-4af7-97b1-b4a99610d5d2",
           "enabled": false
         },
         {
